@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+}
+
+html , body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.wrapper{
+    width: 400px;
+    height: 195px;
+    background-color: #000;
+    color: #eee;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.wrapper.active{
+    height: fit-content;
+}
+
+header{
+    margin-bottom: 10px;
+}
+
+header h1{
+    line-height: 35px;
+}
+
+.form{
+    margin-bottom: 10px;
+}
+
+.form input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #111;
+    color: #eee;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.form input:focus{
+    box-shadow: 0 0 0 2px #eee;
+}
+
+.form button{
+    width: 360px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #eee;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.qrcode{
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 5px;
+}
+
+.wrapper.active .qrcode{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s ease;
+    background-color: #eee;
+}
