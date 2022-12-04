@@ -17,7 +17,7 @@ html , body{
 }
 
 .wrapper{
-    width: 400px;
+    max-width: 400px;
     height: 195px;
     background-color: #000;
     color: #eee;
