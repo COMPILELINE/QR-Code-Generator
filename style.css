@@ -23,6 +23,7 @@ html , body{
     color: #eee;
     padding: 20px;
     border-radius: 10px;
+    overflow:hidden;
 }
 
 .wrapper.active{
